@@ -39,25 +39,32 @@ int GCD(int a, int b)
 }
 void toiGianPS(PhanSo& x)
 {
-	int gcd= GCD(x.tu, x.mau);
-	x.tu /= gcd;
-	x.mau /= gcd;
+	int gcd = GCD(x.tu, x.mau);
+	if (x.mau != 0)
+	{
+		x.tu /= gcd;
+		x.mau /= gcd;
+	}
 }
 bool operator > (PhanSo a, PhanSo b)
 {
-	return (1.0 * a.tu / a.mau) > (1.0 * a.tu / a.mau);
+	return (1.0 * a.tu / a.mau) > (1.0 * b.tu / b.mau);
 }
 bool operator < (PhanSo a, PhanSo b)
 {
-	return (1.0 * a.tu / a.mau) < (1.0 * a.tu / a.mau);
+	return (1.0 * a.tu / a.mau) < (1.0 * b.tu / b.mau);
 }
 bool operator == (PhanSo a, PhanSo b)
 {
-	return (1.0 * a.tu / a.mau) == (1.0 * a.tu / a.mau);
+<<<<<<< HEAD
+	return a.tu == b.tu && a.mau == b.mau;
+=======
+	return (1.0 * a.tu / a.mau) == (1.0 * b.tu / b.mau);
+>>>>>>> 32abf2bdaba626d0b904490dc4ee5e86d9e81c90
 }
 bool operator != (PhanSo a, PhanSo b)
 {
-	return (1.0 * a.tu / a.mau) != (1.0 * a.tu / a.mau);
+	return (1.0 * a.tu / a.mau) != (1.0 * b.tu / b.mau);
 }
 
 

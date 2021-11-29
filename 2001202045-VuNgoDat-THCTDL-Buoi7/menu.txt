@@ -1,0 +1,22 @@
+==========================================================================
+*Bài 2. Cho cây đỏ đen mà mỗi nút là 1 phân số. Hãy viết chương
+trình để thực hiện những chức năng sau:
+  a. Tạo menu của chương trình.
+[1] b. Tạo cây từ một mảng.
+[2] c. Duyệt cây bằng 6 cách: traverseNLR, traverseLNR,
+[3] traverseLRN, traverseNRL, traverseRNL, traverseRLN.
+[4] d. Duyệt cây theo chiều rộng tương ứng với 2 phép duyệt cây NLR, NRL.
+[5] e. Duyệt cây theo chiều sâu tương ứng với 6 phép duyệt cây NLR, NRL, LNR, RNL, LRN và RLN.
+[6] f. Thêm 1 nút là phân số p bất kỳ vào cây.
+[7] g. Tìm kiếm 1 phân số p có trên cây hay không?
+[8] h. Xóa một phân số p trên cây.
+[9] i. Xóa những phân số có giá trị >2.
+[10] j. Xóa những phân số có mẫu số là số nguyên tố.
+[11] k. Tính tổng các phân số.
+[12] l. Đếm số lượng phân số ở mức k (k được nhập từ bàn phím).
+[13] m. Xóa toàn bộ các nút của cây.
+*Bài 3. Tiếp theo Bài tập 2. Hãy bổ sung thêm những chức năng sau:
+[14] a. Liệt kê các phân số có tử số nhỏ hơn mẫu số.
+[15] b. Liệt kê các phân số có mẫu số là một số chính phương.
+[16] c. Liệt kê các phân số có tử số và mẫu số đồng thời là số hoàn thiện.
+==========================================================================
