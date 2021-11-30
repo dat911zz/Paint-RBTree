@@ -56,11 +56,7 @@ bool operator < (PhanSo a, PhanSo b)
 }
 bool operator == (PhanSo a, PhanSo b)
 {
-<<<<<<< HEAD
 	return a.tu == b.tu && a.mau == b.mau;
-=======
-	return (1.0 * a.tu / a.mau) == (1.0 * b.tu / b.mau);
->>>>>>> 32abf2bdaba626d0b904490dc4ee5e86d9e81c90
 }
 bool operator != (PhanSo a, PhanSo b)
 {

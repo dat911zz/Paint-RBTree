@@ -1,10 +1,7 @@
 #include<iostream>
-<<<<<<< HEAD
 #include<fstream>
 #include<Windows.h>
 #include<string>
-=======
->>>>>>> 32abf2bdaba626d0b904490dc4ee5e86d9e81c90
 #include"PhanSo.h"
 #include"BRTree.h"
 using namespace std;
@@ -12,7 +9,6 @@ using namespace std;
 
 //Prototype
 void showPS(BRTNode<PhanSo>* p);
-<<<<<<< HEAD
 void menu();
 void traversePS(BRTree<PhanSo> tree);
 //Main
@@ -37,7 +33,7 @@ void main()
 				if (findBRTNode(tree.Root, a[i]) == NULL)
 				{
 					insert(tree.Root, a[i]);
-				}			
+				}
 			}
 			showBRTree_InOrder(tree.Root, showPS);
 			break;
@@ -63,21 +59,8 @@ void main()
 		set_Color(0, 7);
 		system("pause");
 	} while (chon > 0 && chon <= 10);
-=======
-//Main
-void main()
-{
-	PhanSo a[100] = { {1,3},{2,4},{2,5},{9,8},{9,2},{5,5} };
-	BRTree<PhanSo> tree;
-	initBRTree(tree);
-	for (int i = 0; i < 5; i++)
-	{
-		toiGianPS(a[i]);
-		insert(tree.Root, a[i]);
-	}
-	showBRTree_InOrder(tree.Root, showPS);
->>>>>>> 32abf2bdaba626d0b904490dc4ee5e86d9e81c90
 }
+
 //Functions
 void showPS(BRTNode<PhanSo>* p)
 {
@@ -88,8 +71,6 @@ void showPS(BRTNode<PhanSo>* p)
 	cprintf(" [%d/%d]", p->Info.tu,p->Info.mau);
 	//xuatPhanSo(p->Info);
 	set_Color(14, 2);		//Light Yellow=14 (E), Green=2
-
-<<<<<<< HEAD
 }
 void menu()
 {
@@ -122,6 +103,4 @@ void traversePS(BRTree<PhanSo> tree)
 	cout << endl;
 	RLN(tree.Root, showPS);
 	cout << endl;
-=======
->>>>>>> 32abf2bdaba626d0b904490dc4ee5e86d9e81c90
 }

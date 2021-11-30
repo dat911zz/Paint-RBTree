@@ -75,28 +75,10 @@ void showBRTNode(BRTNode<T>* p)
 }
 //==================================================
 /* Initalize BRTree */
-<<<<<<< HEAD
 template <class T>
 void initBRTree(BRTree<T>& brt)
 {
 	brt.Root = NULL;
-}
-
-/* Hoán vị màu (Color) */
-void swapColors(EColor& color1, EColor& color2)
-{
-	EColor temp = color1;
-	color1 = color2;
-	color2 = temp;
-}
-
-/* Hoán vị giá trị */
-template <class T>
-void swapInfos(T& info1, T& info2)
-{
-	T temp = info1;
-	info1 = info2;
-	info2 = temp;
 }
 
 template <class T>
@@ -153,12 +135,6 @@ void RLN(BRTNode<T>* root, void (*show)(BRTNode<T>*))
 	showBRTree_InOrder(root->Left, show);
 	show(root);
 }
-=======
-template <class T>
-void initBRTree(BRTree<T>& brt)
-{
-	brt.Root = NULL;
-}
 
 /* Hoán vị màu (Color) */
 void swapColors(EColor& color1, EColor& color2)
@@ -177,7 +153,6 @@ void swapInfos(T& info1, T& info2)
 	info2 = temp;
 }
 
->>>>>>> 32abf2bdaba626d0b904490dc4ee5e86d9e81c90
 /* Một hàm đệ quy để thực hiện việc duyệt thứ tự NLR - PreOrder */
 template <class T>
 void showBRTree_PreOrder(BRTNode<T>* root, void (*show)(BRTNode<T>*))
@@ -781,8 +756,6 @@ void createBRTreeFromArray(BRTree<T>& brt, T a[], int na, void (*show)(BRTNode<T
 		getch();
 	}
 }
-<<<<<<< HEAD
-
 template<class T>
 BRTNode<T>* findBRTNode(BRTNode<T>* root, const T x)
 {
@@ -811,41 +784,6 @@ BRTNode<T>* findBRTNode(BRTNode<T>* root, const T x)
 			}
 		}
 	}
-=======
-/* Hàm main để thực hiện kiểm tra kết quả */
-//void main()
-//{
-//	BRTree<int> brtree;
-//	initBRTree(brtree);
-//
-//	int a[] = { 4, 7, 12, 15, 3, 5, 14, 18, 16, 17 };
-//	int n = 10;
-//	createBRTreeFromArray(brtree, a, n, showBRTNode);
-//
-//	printf("\nOutput: NLR\n");
-//	showBRTree_InOrder(brtree.Root, showBRTNode);
-//
-//	//printf("\nOutput: Duyet theo chieu rong (Breadth-first traverse) \n");
-//	showLevelOrder(brtree.Root, showBRTNode);
-//
-//	//printf("\nOutput: Duyet theo chieu sau Pre-Order (Depth-first traverse) \n");
-//	showPreOrder(brtree.Root, showBRTNode);
-//	//showPreOrder()
-//	deleteByInfo(brtree.Root, 3);
-//	printf("\nOutput: sau khi xoa 3");
-//	showLevelOrder(brtree.Root, showBRTNode);
-//	getch();
-//	
-//	deleteByInfo(brtree.Root, 50);
-//	getch();
-//
-//	printf("\n-------------------------------------");
-//	printf("\nChuong trinh nay duoc cai dat boi: TVTho-FIT-HUFI.");
-//	getch();
-//}
-
->>>>>>> 32abf2bdaba626d0b904490dc4ee5e86d9e81c90
-
 }
 /* Hàm main để thực hiện kiểm tra kết quả */
 //void main()
