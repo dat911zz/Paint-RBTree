@@ -144,10 +144,12 @@
   <ItemGroup>
     <ClInclude Include="BRTree.h" />
     <ClInclude Include="PhanSo.h" />
+    <ClInclude Include="PrintTree.h" />
     <ClInclude Include="SinhVien.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="menu.txt" />
+    <Text Include="PhanSo.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -59,7 +59,7 @@ void set_Color(int colorBackground, int colorText) {
 	4 = Red         C = Light Red
 	5 = Purple      D = Light Purple
 	6 = Yellow      E = Light Yellow
-	7 = White       F = Bright White
+	7 = White       F = BRight White
 	=> set_Color(X); -> X = a*16 + b, a (background) và b (character)
 	*/
 }
@@ -67,9 +67,9 @@ template <class T>
 void showBRTNode(BRTNode<T>* p)
 {
 	if (p->Color == RED)
-		set_Color(15, 12);	//Light Red=12 (C), Bright White=15 (F)
+		set_Color(15, 12);	//Light Red=12 (C), BRight White=15 (F)
 	else if (p->Color == BLACK)
-		set_Color(15, 0);	//Black=0, Bright White=15 (F)
+		set_Color(15, 0);	//Black=0, BRight White=15 (F)
 	cprintf("%4d", p->Info);
 	set_Color(14, 2);		//Light Yellow=14 (E), Green=2
 }
@@ -146,11 +146,11 @@ void swapColors(EColor& color1, EColor& color2)
 
 /* Hoán vị giá trị */
 template <class T>
-void swapInfos(T& info1, T& info2)
+void swapInfos(T& Info1, T& Info2)
 {
-	T temp = info1;
-	info1 = info2;
-	info2 = temp;
+	T temp = Info1;
+	Info1 = Info2;
+	Info2 = temp;
 }
 
 /* Một hàm đệ quy để thực hiện việc duyệt thứ tự NLR - PreOrder */
@@ -229,7 +229,7 @@ void iterativePreOrder(BRTNode<T>* root, void (*show)(BRTNode<T>*)) {
 		p = s.top();
 		s.pop();
 		show(p);
-		//right child is pushed first so that left is processed first
+		//Right child is pushed first so that Left is processed first
 		if (p->Right != NULL)
 			s.push(p->Right);
 		if (p->Left != NULL)
@@ -294,8 +294,8 @@ void iterativePostOrder(BRTNode<T>* root, void (*show)(BRTNode<T>*)) {
 		}
 		else {
 			p = s.top();
-			// if right child exists and traversing node
-			// from left child, then move right
+			// if Right child exists and traversing node
+			// from Left child, then move Right
 			if (p->Right && p->Right != pt_lastNodeVisited) {
 				root = p->Right;
 			}
@@ -653,11 +653,11 @@ void fixDoubleBlack(BRTNode<T>*& root, BRTNode<T>* p) {
 			pParent->Color = RED;
 			pSibling->Color = BLACK;
 			if (isOnLeft(pSibling)) {
-				// trường hợp left 
+				// trường hợp Left 
 				rotateRight(root, pParent);
 			}
 			else {
-				// trường hợp right 
+				// trường hợp Right 
 				rotateLeft(root, pParent);
 			}
 			fixDoubleBlack(root, p);
@@ -668,13 +668,13 @@ void fixDoubleBlack(BRTNode<T>*& root, BRTNode<T>* p) {
 				// Ist nhất 1 trẻ em màu đỏ 
 				if (pSibling->Left != NULL && pSibling->Left->Color == RED) {
 					if (isOnLeft(pSibling)) {
-						// left left 
+						// Left Left 
 						pSibling->Left->Color = pSibling->Color;
 						pSibling->Color = pParent->Color;
 						rotateRight(root, pParent);
 					}
 					else {
-						// right left 
+						// Right Left 
 						pSibling->Left->Color = pParent->Color;
 						rotateRight(root, pSibling);
 						rotateLeft(root, pParent);
@@ -682,13 +682,13 @@ void fixDoubleBlack(BRTNode<T>*& root, BRTNode<T>* p) {
 				}
 				else {
 					if (isOnLeft(pSibling)) {
-						// left right 
+						// Left Right 
 						pSibling->Right->Color = pParent->Color;
 						rotateLeft(root, pSibling);
 						rotateRight(root, pParent);
 					}
 					else {
-						// right right 
+						// Right Right 
 						pSibling->Right->Color = pSibling->Color;
 						pSibling->Color = pParent->Color;
 						rotateLeft(root, pParent);

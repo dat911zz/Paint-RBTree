@@ -12,6 +12,8 @@ struct PhanSo
 void nhapPhanSo(PhanSo& x);
 void xuatPhanSo(PhanSo x);
 void toiGianPS(PhanSo& x);
+PhanSo operator + (PhanSo a, PhanSo b);
+PhanSo operator - (PhanSo a, PhanSo b);
 bool operator > (PhanSo a, PhanSo b);
 bool operator < (PhanSo a, PhanSo b);
 bool operator == (PhanSo a, PhanSo b);
@@ -44,6 +46,28 @@ void toiGianPS(PhanSo& x)
 	{
 		x.tu /= gcd;
 		x.mau /= gcd;
+	}
+}
+PhanSo operator + (PhanSo a, PhanSo b)
+{
+	if (a.mau == b.mau)
+	{
+		return { (a.tu + b.tu), a.mau };
+	}
+	else
+	{
+		return { (a.tu * b.mau) + (b.tu * a.mau), (a.mau * b.mau) };
+	}
+}
+PhanSo operator - (PhanSo a, PhanSo b)
+{
+	if (a.mau == b.mau)
+	{
+		return { (a.tu - b.tu), a.mau };
+	}
+	else
+	{
+		return { (a.tu * b.mau) - (b.tu * a.mau), (a.mau * b.mau) };
 	}
 }
 bool operator > (PhanSo a, PhanSo b)
