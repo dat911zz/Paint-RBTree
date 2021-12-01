@@ -29,6 +29,9 @@
     <ClInclude Include="BRTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PrintTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="menu.txt">

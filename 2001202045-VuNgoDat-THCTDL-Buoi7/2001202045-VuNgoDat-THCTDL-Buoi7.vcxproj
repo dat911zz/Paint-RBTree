@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="BRTree.h" />
     <ClInclude Include="PhanSo.h" />
+    <ClInclude Include="PrintTree.h" />
     <ClInclude Include="SinhVien.h" />
   </ItemGroup>
   <ItemGroup>
