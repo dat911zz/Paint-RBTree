@@ -32,12 +32,24 @@
     <ClInclude Include="PrintTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Dictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintDictionaryTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="menu.txt">
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="PhanSo.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="menu_2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Dictionary.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
