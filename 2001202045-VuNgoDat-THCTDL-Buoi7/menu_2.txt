@@ -1,0 +1,14 @@
+==========================================================================
+Bài 4. Cây đỏ đen lưu trữ dữ liệu là một từ điển Anh-Việt (Mỗi nút
+của cây có dữ liệu gồm 2 trường: word là khóa chứa một từ tiếng
+anh, mean là nghĩa tiếng Việt). Hãy xây dựng cây đỏ đen với những
+chức năng sau:
+	a. Xây dựng chương trình dạng menu.
+[1] b. Tạo cây từ 1 file text lưu từ điển Anh-Việt.
+[2] c. Duyệt cây để xem nội dung theo chiều rộng và chiều sâu.
+[3] d. Tra cứu nghĩa của 1 từ bất kỳ.
+[4] e. Thêm một từ bất kỳ vào cây, duyệt lại cây để xem kết quả.
+[5] f. Xóa một từ bất kỳ khỏi cây, duyệt lại cây để xem kết quả.
+[6] g. Bổ sung hay chỉnh sửa nghĩa của 1 từ bất kỳ.
+[7] h. Xóa toàn bộ cây.
+==========================================================================

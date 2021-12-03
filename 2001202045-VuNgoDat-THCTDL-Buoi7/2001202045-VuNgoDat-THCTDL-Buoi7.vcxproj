@@ -143,12 +143,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BRTree.h" />
+    <ClInclude Include="Dictionary.h" />
     <ClInclude Include="PhanSo.h" />
+    <ClInclude Include="PrintDictionaryTree.h" />
     <ClInclude Include="PrintTree.h" />
     <ClInclude Include="SinhVien.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Dictionary.txt" />
     <Text Include="menu.txt" />
+    <Text Include="menu_2.txt" />
     <Text Include="PhanSo.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
